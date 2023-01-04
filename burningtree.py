@@ -1,3 +1,11 @@
+"""
+    Traverse the tree DFS to find target.
+    Once target is found burn it and push its children to the queue,
+    return burnt value as True.
+    If burn value is True then burn current node and add its other child to queue.
+    This will burn all the nodes upto the root node since recursion ends there.
+    After the root is burnt burn the left over nodes in the queue iteratively.
+"""
 from __future__ import annotations
 from pydantic import BaseModel
 from typing import Optional
